@@ -1,0 +1,171 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+@font-face {
+  font-family: "Nunito";
+  src: url("../fonts/Nunito-ExtraLightItalic.woff2") format("woff2"),
+    url("../fonts/Nunito-ExtraLightItalic.woff") format("woff");
+  font-weight: 200;
+  font-style: italic;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Nunito";
+  src: url("../fonts/Nunito-ExtraLight.woff2") format("woff2"),
+    url("../fonts/Nunito-ExtraLight.woff") format("woff");
+  font-weight: 200;
+  font-style: normal;
+  font-display: swap;
+}
+.order {
+  background-color: lightgray;
+  padding: 100px;
+  margin: 0 auto;
+  height: 100vh;
+}
+.order__card {
+  max-width: 780px;
+  height: 340px;
+  width: 100%;
+  background-color: #fff;
+  padding: 40px;
+}
+.time {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 5px;
+}
+.border {
+  border: #e2e2e9 2px solid;
+  max-width: 700px;
+  width: 100%;
+  margin-top: 31px;
+}
+.adress {
+  display: flex;
+  flex-direction: row;
+}
+.num {
+  font-family: "Nunito", sans-serif;
+  color: #73798c;
+  font-size: 16px;
+  font-weight: 400;
+}
+.time__order {
+  font-family: "Nunito", sans-serif;
+  color: #000;
+  font-size: 36px;
+  font-weight: 600;
+}
+.content {
+  color: #000;
+  font-family: "Nunito", sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+  margin-top: 9px;
+  margin-left: 5px;
+}
+.adress__span {
+  font-weight: 600;
+  font-family: "Nunito", sans-serif;
+  font-size: 16px;
+  margin-top: 9px;
+}
+.btns {
+  margin-top: 70px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.cancel {
+  color: #d15700;
+  text-align: center;
+  font-size: 16px;
+  font-weight: 600;
+  padding: 13px 20px;
+  border-radius: 1000px;
+  border: none;
+  background-color: #fff0e6;
+}
+.menu {
+  text-decoration: none;
+  color: #fff;
+  text-align: center;
+  font-family: "Nunito", sans-serif;
+  font-size: 16px;
+  font-weight: 600;
+  padding: 13px 27px;
+  border-radius: 1000px;
+  border: none;
+  background-color: #f96900;
+}
+.cancel:hover {
+    background-color: #FFD0B2;
+    color: #D55406;
+    cursor: pointer;
+}
+.menu:hover {
+    background-color: #ED5D08;
+    cursor: pointer;
+    }
+@media (max-width: 710px) {
+  .num {
+    font-family: Arial, sans-serif;
+    font-size: 12px;
+  }
+  .time__order {
+    font-size: 24px;
+  }
+  .btns {
+    margin-top: 70px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    gap: 10px;
+  }
+  .cancel {
+    width: 288px;
+    height: 48px;
+  }
+  .menu {
+    width: 288px;
+    height: 48px;
+  }
+  .order__card {
+    height: 377px;
+    padding: 16px;
+  }
+  .border {
+    border: #e2e2e9 2px solid;
+    max-width: 288px;
+    width: 100%;
+    margin-top: 12px;
+  }
+  .order_hidden {
+    opacity: 0;
+  }
+  .border {
+    display: none;
+  }
+  .adress {
+    opacity: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    margin-top: 12px;
+    padding: 18px 20px;
+    max-width: 288px;
+    width: 100%;
+    background-color: #f3f3f7;
+    border-radius: 10px;
+  }
+  .content {
+    margin-top: 4px;
+  }
+}
